@@ -1,0 +1,30 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Installing dependencies"
+
+  pre_build:
+    commands:
+      - echo "Logging in to Docker Hub"
+      - echo "awais1234" | docker login -u "awais1230" --password-stdin
+      - echo "Pre-build phase complete"
+
+  build:
+    commands:
+      - echo "Build started on $(date)"
+      - echo "Building the Docker images"
+      - docker-compose -f docker-compose.yml build
+      - echo "Build completed"
+
+  post_build:
+    commands:
+      - echo "Tagging and pushing Docker images to Docker Hub"
+      - docker-compose -f docker-compose.yml push
+      - echo "Docker images pushed"
+
+artifacts:
+  files:
+    - appspec.yml
+    - scripts/*
