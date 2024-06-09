@@ -1,4 +1,4 @@
-# # # End-to-End AWS Infrastructure Deployment: Terraform, Docker, CI/CD, and Live Data Visualization with Metabase
+### End-to-End AWS Infrastructure Deployment: Terraform, Docker, CI/CD, and Live Data Visualization with Metabase
 
 This repository showcases a complete deployment of a PHP application on AWS using Terraform, Docker, AWS CodeDeploy and CodePipeline.
 
