@@ -1,4 +1,4 @@
-# DevOps Final Project
+# Terraform-AWS-CodePipeline-CodeDeploy-Docker-Metabase-Project
 
 This repository showcases a complete deployment of a PHP application on AWS using Terraform, Docker, AWS CodeDeploy and CodePipeline.
 
