@@ -1,6 +1,6 @@
 # DevOps Final Project
 
-This repository contains the final project for the DevOps course at IBA, showcasing a complete deployment of an application on AWS using Terraform, Docker, and AWS CodeDeploy.
+This repository showcases a complete deployment of a PHP application on AWS using Terraform, Docker, AWS CodeDeploy and CodePipeline.
 
 ## Table of Contents
 
@@ -71,30 +71,30 @@ ssh -i your-key.pem ec2-user@private-vm-ip
 
 1) Setup Docker and Docker-Compose:
 
-Ensure Docker and Docker-Compose are installed on the deployment servers.
+* Ensure Docker and Docker-Compose are installed on the deployment servers.
 
 2) Configure CodeDeploy:
 
-Use the provided appspec.yml and buildspec.yml files to setup CodeDeploy.
+* Use the provided appspec.yml and buildspec.yml files to setup CodeDeploy.
 
 3) Deploy Applications:
 
-Deploy Nginx and PHP applications using Docker containers.
+* Deploy Nginx and PHP applications using Docker containers.
 
 ## Domain and SSL Configuration
 
 1) Domain Setup:
 
-Configure your domain with Cloudflare.
+* Configure your domain with Cloudflare.
 
 2) SSL Certificates:
 
-Add a CNAME record in Cloudflare to get free SSL certificates for your domain.
+* Add a CNAME record in Cloudflare to get free SSL certificates for your domain.
 
 ## Monitoring
 
 1) Setup Metabase:
    
-Deploy Metabase using Docker.
+* Deploy Metabase using Docker.
 
-2) Configure Metabase to monitor the RDS MySQL database.
+* Configure Metabase to monitor the RDS MySQL database.
